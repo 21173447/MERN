@@ -18,7 +18,9 @@ const Navigationbar = () => {
     return (
         <div className='flex justify-between items-cente last:r dark:bg-blue-900 px-10 pt-10'>
             <ul className='flex items-center space-x-1 text-2xl'>
-                <h1 className='text-3xl  font-bold text-blue-500 dark:text-blue-300'>PRODUCT STORE</h1>
+                <Link to="/">
+                    <h1 className='text-3xl  font-bold text-blue-500 dark:text-blue-300'>PRODUCT STORE</h1>
+                </Link>
                 <FaShoppingCart className='transform scale-x-[-1]' />
             </ul >
 
@@ -27,8 +29,6 @@ const Navigationbar = () => {
                     {dark ? <IoSunnyOutline />
                         : <FaRegMoon />}
                 </button>
-
-
                 <Link to="/create">
                     <CiSquarePlus />
                 </Link>
